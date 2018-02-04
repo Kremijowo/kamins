@@ -81,11 +81,11 @@ for classification in clf.classifications:
     for featureset in clf.classifications[classification]:
         plt.scatter(featureset[0], featureset[1], marker="x", color=color, s=50, linewidths=5)
 
-unknowns = np.array([[1,3],
-                     [8.9],
-                     [0,3],
-                     [5,4],
-                     [6,4],])
+unknowns = np.array([[2,2],
+                     [3,3],
+                     [4,4],
+                     [5,5],
+                     [6,6],])
 
 for unknown in unknowns:
     classification = clf.predict(unknown)
